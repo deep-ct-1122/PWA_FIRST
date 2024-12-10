@@ -6,7 +6,10 @@ const STATIC_FILES_TO_CHACHE = [
     'app.js',
     'common.css',
     'index.css',
-    'mainBg.png'
+    'mainBg.png',
+    'appIcon.png,
+    'splash.png',
+    'manifest.json'
 ]
 
 self.addEventListener('install', function (event) {
