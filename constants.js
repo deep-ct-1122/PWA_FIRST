@@ -1,0 +1,1 @@
+const landingTitle = 'Start Earning Rewards Today'

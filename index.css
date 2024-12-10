@@ -1,0 +1,126 @@
+font-face {
+    font-family: 'Aeonik-Regular';
+    /*a name to be used later*/
+    src: url('/Assets/Fonts/Aeonik-Regular.otf');
+
+}
+
+body {
+    margin: 0px;
+    background-image: url('/Assets/mainBg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#title {
+    margin: 0px;
+    color: white;
+    font-family: 'Baton-Black';
+    font-size: 44px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 32px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#subtitle {
+    margin: 0px;
+    color: white;
+    font-family: 'Aeonik-Regular';
+    font-size: 1.5em;
+    font-weight: 400;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 16px;
+}
+
+.joinNowButton {
+    border: 2px solid black;
+    border-color: black;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 28px;
+    background-color: white;
+    color: black;
+    height: 56px;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.joinNowButton:hover {
+    color: white;
+    background-color: black;
+    border-color: white;
+}
+
+#signInLabel {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 24px;
+}
+
+.signInButton {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.quickLinks {
+    margin: 24px;
+    color: white;
+    margin-top: 32px;
+}
+
+.quickLinkItem {
+    text-decoration: none;
+    color: white;
+}
+
+.socialLinks {
+    margin-left: 24px;
+}
+
+.socialLink {
+    padding-right: 20px;
+}
+
+#version {
+    color: white;
+    margin: 24px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.legal {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media (min-width: 700px) {
+    body {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        margin-top: 100px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        margin-top: 200px;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+}

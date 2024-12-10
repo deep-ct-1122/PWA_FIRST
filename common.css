@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Baton-Black';
+    /*a name to be used later*/
+    src: url('/Assets/Fonts/Baton-Black.otf');
+}
+
+@font-face {
+    font-family: 'Baton-Medium';
+    /*a name to be used later*/
+    src: url('/Assets/Fonts/Baton-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Baton-Regular';
+    /*a name to be used later*/
+    src: url('/Assets/Fonts/Baton-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Aeonik-Bold';
+    /*a name to be used later*/
+    src: url('/Assets/Fonts/Aeonik-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Aeonik-Medium';
+    /*a name to be used later*/
+    src: url('/Assets/Fonts/Aeonik-Medium.otf');
+
+}
+
+.centerWarpper {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.horizontal {
+    float: left;
+    margin: 0px;
+}
+
+.horizontal * {
+    display: inline-block;
+}
+
+.linkButton {
+    padding: 0;
+    border: none;
+    background: none;
+    text-decoration: underline;
+}
