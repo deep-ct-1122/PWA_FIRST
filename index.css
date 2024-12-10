@@ -7,7 +7,7 @@ font-face {
 
 body {
     margin: 0px;
-    background-image: url('/Assets/mainBg.png');
+    background-image: url('mainBg.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
