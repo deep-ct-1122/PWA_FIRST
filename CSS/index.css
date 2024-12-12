@@ -1,13 +1,13 @@
 font-face {
     font-family: 'Aeonik-Regular';
     /*a name to be used later*/
-    src: url('/Assets/Fonts/Aeonik-Regular.otf');
+    src: url('../../Assets/Fonts/Aeonik-Regular.otf');
 
 }
 
 body {
     margin: 0px;
-    background-image: url('/Assets/mainBg.png');
+    background-image: url('../../Assets/mainBg.png');
     background-repeat: no-repeat;
     background-size: cover;
 }

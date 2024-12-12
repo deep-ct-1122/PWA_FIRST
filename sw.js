@@ -2,20 +2,20 @@ const STATIC_CACHE = 'static-cache-v2'
 const DYNAMIC_CACHE = 'dynamic-cache-v1'
 
 const STATIC_FILES_TO_CHACHE = [
-    '/index.html',
-    '/app.js',
-    '/CSS/common.css',
-    '/CSS/index.css',
-    '/Assets/mainBg.png'
+    '../../index.html',
+    '../../app.js',
+    '../../CSS/common.css',
+    '../../CSS/index.css',
+    '../../Assets/mainBg.png'
 ]
 
 self.addEventListener('install', function (event) {
     event.waitUntil(
         caches.open(STATIC_CACHE)
-        .then(function (cache) {
-            console.log('[SW]: Static Caching Started')
-            cache.addAll(STATIC_FILES_TO_CHACHE)
-        })
+            .then(function (cache) {
+                console.log('[SW]: Static Caching Started')
+                cache.addAll(STATIC_FILES_TO_CHACHE)
+            })
     )
 })
 
@@ -26,21 +26,21 @@ self.addEventListener('activate', function (event) {
 
     event.waitUntil(
         caches.keys()
-        .then(function(cachedFileNames) {
-            // Returns the list of old cached file names
-            return cachedFileNames.filter( cachedFileName => !allCaches.includes(cachedFileName))
-        })
-        .then(function(cachedFileNamesToDelete) {
-            return Promise.all(cachedFileNamesToDelete.map(cachedFileNameToDelete => {
-                return caches.delete(cachedFileNameToDelete)
-            }))
-        })
-        .then(() => self.clients.claim())
+            .then(function (cachedFileNames) {
+                // Returns the list of old cached file names
+                return cachedFileNames.filter(cachedFileName => !allCaches.includes(cachedFileName))
+            })
+            .then(function (cachedFileNamesToDelete) {
+                return Promise.all(cachedFileNamesToDelete.map(cachedFileNameToDelete => {
+                    return caches.delete(cachedFileNameToDelete)
+                }))
+            })
+            .then(() => self.clients.claim())
     )
 })
 
 // CACHE ONLY
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', function (event) {
     event.respondWith(
         caches.match(event.request)
             .then(function (cachedResponse) {
@@ -51,14 +51,14 @@ self.addEventListener('fetch', function(event) {
                 return caches.open(DYNAMIC_CACHE).then(cache => {
                     return fetch(event.request)
                         .then(response => {
-                        // Put a copy of the response in the runtime cache.
-                        return cache.put(event.request, response.clone())
-                            .then(() => { return response });
-                    });
+                            // Put a copy of the response in the runtime cache.
+                            return cache.put(event.request, response.clone())
+                                .then(() => { return response });
+                        });
                 });
             })
-            .catch(function(error) {
+            .catch(function (error) {
                 console.log('[SW]: ', error)
             })
-    )   
+    )
 })
