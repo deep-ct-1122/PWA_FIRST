@@ -3,7 +3,7 @@
     "name": "First PWA Demo App",
     "short_name": "First PWA Demo",
     "description": "First PWA App after learning done",
-    "start_url": "../../index.html",
+    "start_url": "index.html",
     "scope": ".",
     "background_color": "#ffffff",
     "theme_color": "#086B6B",
@@ -11,7 +11,7 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "../../Assets/appIcon.png",
+            "src": "../Assets/appIcon.png",
             "sizes": "1024x1024",
             "type": "image/png"
         }

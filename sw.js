@@ -2,11 +2,11 @@ const STATIC_CACHE = 'static-cache-v2'
 const DYNAMIC_CACHE = 'dynamic-cache-v1'
 
 const STATIC_FILES_TO_CHACHE = [
-    '../../index.html',
-    '../../app.js',
-    '../../CSS/common.css',
-    '../../CSS/index.css',
-    '../../Assets/mainBg.png'
+    'index.html',
+    'app.js',
+    '../CSS/common.css',
+    '../CSS/index.css',
+    '../Assets/mainBg.png'
 ]
 
 self.addEventListener('install', function (event) {
