@@ -1,19 +1,19 @@
 @font-face {
     font-family: 'Baton-Black';
     /*a name to be used later*/
-    src: url('../../Assets/Fonts/Baton-Black.otf');
+    src: url("Assets/Fonts/Baton-Black.otf");
 }
 
 @font-face {
     font-family: 'Baton-Medium';
     /*a name to be used later*/
-    src: url('../../Assets/Fonts/Baton-Medium.otf');
+    src: url("Assets/Fonts/Baton-Medium.otf");
 }
 
 @font-face {
     font-family: 'Baton-Regular';
     /*a name to be used later*/
-    src: url('../../Assets/Fonts/Baton-Regular.otf');
+    src: url("Assets/Fonts/Baton-Regular.otf");
 }
 
 @font-face {
@@ -25,7 +25,7 @@
 @font-face {
     font-family: 'Aeonik-Medium';
     /*a name to be used later*/
-    src: url('../../Assets/Fonts/Aeonik-Medium.otf');
+    src: url("Assets/Fonts/Aeonik-Medium.otf");
 }
 
 .centerWarpper {
